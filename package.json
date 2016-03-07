@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/gm-installed/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/gm-installed#readme"
+  "homepage": "https://github.com/IonicaBizau/gm-installed#readme",
+  "dependencies": {
+    "prgm-installed": "^1.0.1"
+  }
 }

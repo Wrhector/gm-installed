@@ -16,19 +16,24 @@ $ npm i --save gm-installed
 const gmInstalled = require("gm-installed");
 
 console.log(gmInstalled());
+// => true
+
+gmInstalled(isInstalled => {
+    console.log(isInstalled);
+    // => true
+});
 ```
 
 ## Documentation
 
-### `gmInstalled(a, b)`
+### `gmInstalled(fn)`
 Check if GraphicsMagick is installed.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **** `fn`: An optional callback function.
 
 #### Return
-- **Number** Return description.
+- **Boolean** `true` if the `gm` binary is detected, `false` otherwise.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
